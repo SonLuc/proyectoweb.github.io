@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <title>Inventario EduMarket</title>
+</head>
+<body>
+    <!-- Luciano | CSS -->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .titulo{
+            text-align: center;
+            font-size: 36px;
+            font-weight: bold;
+            font-family: 'Open Sans', sans-serif;
+
+            /* Estilos adicionales */
+            background-color: #93BFCF;
+            color: #003551;
+            margin-bottom: 30px;
+            padding: 20px 0px;
+        }
+        .descripcion{
+            text-align: center;
+            font-size: 18px;
+            font-family: 'Inter', sans-serif;
+            color: #263159;
+            
+            /* Estilos adicionales */
+            margin: 30px 0px;
+        }
+        .container-tabla{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .tabla{
+            border: 1px solid black;
+            border-collapse: collapse;
+            
+            /* Estilos adicionales */
+            font-size: 15px;
+            text-align: center;
+            width: 70%;
+            color: #93BFCF;
+        }
+        .celda-encabezado{
+            border: 1px solid;
+            
+            /* Estilos adicionales */
+            font-size: 20px;
+            font-family: 'Open Sans', sans-serif;
+            background-color: #003551;
+            color: #93BFCF;
+            padding: 10px 0px;
+        }
+        .celda{
+            border: 1px solid black;
+
+            /* Estilos adicionales */
+            font-family: 'Inter', sans-serif;
+            color: #263159;
+        }
+        
+        
+        /* Estilos adicionales */
+        .container-celda{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px
+        }
+        .fila{
+            background-color: #dff7ff;
+        }
+        .fila:nth-child(even){
+            background-color: #9ce4fe;
+        }
+
+        .footer{
+            color: #263159;
+            position: fixed;
+            bottom: 0;
+            font-family: 'Inter', sans-serif;
+            font-weight: lighter;
+            text-align: center;
+            width: 100%;
+            padding: 15px 0px;
+        }
+    </style>
+    
+
+    <!-- Hector | Encabezado -->
+    <h1 class="titulo">Edumarket - Inventario</h1>
+
+    <!-- Alejandro | Parrafo (descripción de página)-->
+    <p class="descripcion">
+        Esta página tiene como función mostrar el inventario 
+        disponible de la futura APP "EduMarket" 
+        dentro de una tabla.
+    </p>
+
+    <!-- Matias | Tabla 3c 3f  -->
+    <div class="container-tabla">
+
+        <table class="tabla">
+
+            <tr class="fila">
+                <th class="celda-encabezado">Imagen</th>
+                <th class="celda-encabezado">Producto</th>
+                <th class="celda-encabezado">Stock</th>
+            </tr>
+            
+            <tr class="fila">
+                <td class="celda">
+                    <a href="https://www.buscalibre.cl/libro-eloquent-javascript-3rd-edition-a-modern-introduction-to-programming-libro-en-ingles/9781593279509/p/51375656">
+                        <img src="img/producto1.jpg" alt="Libro Javascript" height="100" width="100" >
+                    </a>
+                </td>
+                <td class="celda">
+                    <div class="container-celda">
+                        <p>Libro Javascript</p>
+                        <a href="http://www.ubo.cl/admision/facultades/facultad-de-ingenieria-ciencia-y-tecnologia/ingenieria-en-informatica/"> 
+                            <img src="img/pc-de-escritorio.png" alt="icon_pc" height="50" width="50">
+                        </a>
+                    </div>
+                </td>
+                <td class="celda">
+                    <div class="container-celda">
+                        <p>5</p>
+                        <a href="https://www.istockphoto.com/es/foto/número-5-gm154933777-15655799">
+                            <img src="img/en-stock_1.png" alt="stock_item1" height="50" width="50">
+                        </a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr class="fila">
+                <td class="celda">
+                    <a href="https://mediterraneo.cl/medicina/1394-gray-anatomia-para-estudiantes-4-ed.html">
+                        <img src="img/libro_anatomia.jpg" alt="Libro Grays Anatomy" height="100" width="100">
+                    </a>
+                </td>
+                <td class="celda">
+                    <div class="container-celda">
+                        <p>Libro Gray's Anatomy</p>
+                        <a href="https://www.uchile.cl/carreras/area/salud">
+                            <img src="img/salud.png" alt="icon_pills" height="50" width="50">
+                        </a>
+                    </div>
+                </td>
+                <td class="celda">
+                    <div class="container-celda">
+                    <p>2</p>
+                    <a href="https://www.dreamstime.com/stock-photo-hand-holding-number-2-image347630">
+                        <img src="img/en-stock.png" alt="img_stock_2" height="50" width="50">
+                    </a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr class="fila">
+                <td class="celda">
+                    <div class="container-celda">
+                    <a href="https://www.facebook.com/marketplace/item/600139914997844/?ref=search&referral_code=null&referral_story_type=post&tracking=browse_serp%3A71713a90-c503-4d3d-9f72-825e9dff2e8d">
+                        <img src="img/delantal.jpg" alt="Bata de laboratorio" height="100" width="100">
+                    </a>
+                    </div>
+                </td>
+                <td class="celda">
+                    <div class="container-celda">
+                    <p> Bata de laboratorio</p>
+                    <a href="http://www.ubo.cl/admision/facultades/facultad-de-salud/tecnologia-medica/">
+                        <img src="img/medicina.png" alt="icon_jeringa" height="50" width="50">
+                    </a>
+                    </div>
+                </td>
+                <td class="celda">
+                    <div class="container-celda">
+                    <p>1</p>
+                    <a href="https://www.shutterstock.com/es/search/one">
+                        <img src="img/caja.png" alt="icon_stock3" height="50" width="50">
+                    </a>
+                    </div>
+                </td>
+            </tr>
+
+        </table>
+    </div>
+    <!-- Etiquetas adicionales -->
+    <footer>
+        <h3 class="footer">Derechos reservados &copy; CodeConnect ltda. 2023</h3>
+    </footer>
+</body>
+</html>
